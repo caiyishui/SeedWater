@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.water.seed.view.CaptureView
+            android:id="@+id/cv_main_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.water.seed.view.ZoomImageView
+            android:id="@+id/mv_main_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/vg_1"
+        layout="@layout/view_main_menu_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"/>
+
+
+
+</LinearLayout>
